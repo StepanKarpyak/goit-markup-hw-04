@@ -82,7 +82,7 @@ body {
 }
 .section{
     padding-top: 94px;
-    /*padding-bottom: 94px;*/
+    padding-bottom: 94px;
 }
 
 .conteiner{
@@ -256,7 +256,7 @@ body {
 /*===ABOUT===*/
 .about-title{
     display: flex;
-    margin-bottom: 47px;
+    /*margin-bottom: 47px;*/
 }
 .about:not(:first-child){
     margin-left: 30px;
@@ -267,7 +267,7 @@ body {
     display:block;
     /*text-align: justify;
     justify-content:space-between;*/
-    flex-basis: calc((100% - 3*30px)/4);
+    flex-basis: calc((100% - 3 * 30px)/4);
     /*width: 270px;*/ 
     
 }
@@ -287,7 +287,9 @@ body {
     letter-spacing: 0.03em;
     color: var(--p-text-color);   
 }
-
+.section-work{
+    padding-bottom: 94px;
+}
 
 .section-title{
     margin-bottom: 50px;
@@ -311,13 +313,9 @@ body {
 /*===TEAM===*/
 .team-our{
 }
-.team-color{
-    background-color: var(--our-team-color);
-}
-.about-team{
+.team-list{
     display: flex;
 }
-
 .team{
     font-weight: 700;
     font-size: 36px;
@@ -326,33 +324,53 @@ body {
     letter-spacing: 0.03em;
     /*margin-top: 94px;*/   
 }
-.team-list{
-    flex-basis: calc((100% -3*30px)/4);
 
+.team-color{
+    background-color: var(--our-team-color);
 }
-.team-list:not(:first-child){
-    padding-left: 30px;
+
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 3*30px) / 4);
+    margin-top: -30px;
+    margin-left: -30px;
 }
-.team-hiro{
+
+.team-item{
+    padding: 30px;
+    background-color:var(--secondary-color);
+    text-align: center;
+}
+.iteam-list{
+   /* flex-basis: calc((100%- 4 * 30px) /4);
+    margin-top: -30px;
+    margin-left: -30px;*/
+
+    margin-top: 30px;
+    margin-left: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
+    /*text-align: center;*/
     letter-spacing: 0.03em;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;   
 }
-.time-proff{
-    font-weight: 400;
+.time-position{
+    padding-top: 10px;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
+    /*text-align: center;*/
     letter-spacing: 0.03em;
     color: var(--p-text-color);
 }
-.team-item{
-    padding: 30px;
-}
+
 /*===AND TEAM===*/
 /*===FOOTTER===*/
 .footer{
