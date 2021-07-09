@@ -187,23 +187,20 @@ body {
 .menu-link.current{
     color: var(--accent-color);
 }
-.mail-link{
+.mail-link,
+.tel-link{
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--p-text-color);
-} 
+}
+
 .mail-link:hover,
 .mail-link:focus{
     color: var(--accent-color);
-}
-
-.tel-link{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--p-text-color); 
 }
     .tel-link:hover,
     .tel-link:focus{
@@ -385,7 +382,7 @@ body {
     margin-bottom: 10px;   
 }
 .time-position{
-    padding-top: 10px;
+    margin-top: 10px;
     font-size: 16px;
     line-height: 1.19;
     /*text-align: center;*/
@@ -396,6 +393,7 @@ body {
 .social-list {
     display: flex;
     justify-content: space-between;
+    margin-top: 16px;
 }
 
 .social-list-icon {
@@ -420,6 +418,10 @@ body {
 
 /*===AND TEAM===*/
 /*=======CLIENTS=======*/
+.clients-list-item{
+    margin-top: 30px;
+    margin-left: 30px;
+}
 .clients-list {
     display: flex;
     flex-wrap: wrap;
@@ -438,8 +440,7 @@ body {
     color: var(--description-color);
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    margin-top: 30px;
-    margin-left: 30px;
+    
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -608,7 +609,7 @@ body {
 .portfolio-list-link:hover,
 .portfolio-list-link:focus {
     background: var(--contrast-color);
-    border: 1px solid #eeeeee;
+    /*border: 1px solid #eeeeee;*/
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
