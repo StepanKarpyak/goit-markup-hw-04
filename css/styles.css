@@ -221,16 +221,17 @@ body {
     background: var(--hero-footer-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47 48 58 0.4), rgba(47 48 58 0.4)),
-        url(../imiges/fontimige/img-hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4)),
+        url( ../imiges/fontimige/img-hero.jpg );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    text-align: center;
+    
 }
     
 .hero .conteiner{
     width: 694px;
+    text-align: center;
 }
 .hero-title{
     margin-bottom: 30px;
@@ -413,7 +414,7 @@ body {
 }
 .social-list-link:hover,
 .social-list-link:focus {
-    fill: var(---secondary-color);
+    fill: var(--secondary-color);
     background-color: var(--accent-color);
 }
 
